@@ -338,3 +338,12 @@ def residual_IIntegrin(params, points):
     p[2] - fun_IIntegrin(p[0], p[1], params) for p in points]
 
   return numpy.linalg.norm(residuals)
+
+def main():
+    fit_ESelectin()
+    fit_PSelectin()
+    fit_IIntegrin()
+    fit_VIntegrin()
+
+if __name__ == "__main__":
+    main()
