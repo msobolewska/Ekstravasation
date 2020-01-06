@@ -17,6 +17,11 @@ data = []
 
 def fit_PSelectin():
 
+    x.clear()
+    y.clear()
+    z.clear()
+    data.clear()
+
     with open('PSelectin_Fold1.csv', 'r') as csvfile:
         plots = csv.reader(csvfile, delimiter=';')
         for row in plots:
@@ -67,6 +72,11 @@ def fit_PSelectin():
     plt.show()
 
 def fit_ESelectin():
+
+    x.clear()
+    y.clear()
+    z.clear()
+    data.clear()
 
     with open('ESelectin_Fold1.csv','r') as csvfile:
         plots = csv.reader(csvfile, delimiter=';')
@@ -119,6 +129,11 @@ def fit_ESelectin():
 
 def fit_VIntegrin():
 
+    x.clear()
+    y.clear()
+    z.clear()
+    data.clear()
+
     with open('VCAM_Fold1.csv','r') as csvfile:
         plots = csv.reader(csvfile, delimiter=';')
         for row in plots:
@@ -169,6 +184,11 @@ def fit_VIntegrin():
     plt.show()
 
 def fit_IIntegrin():
+
+    x.clear()
+    y.clear()
+    z.clear()
+    data.clear()
 
     with open('ICAM_Fold1.csv','r') as csvfile:
         plots = csv.reader(csvfile, delimiter=';')
